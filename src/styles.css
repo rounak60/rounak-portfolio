@@ -461,11 +461,6 @@ button {
   color: #62dfff;
 }
 
-.card-react b {
-  color: var(--muted);
-  margin-left: 5px;
-}
-
 .card-performance {
   right: 5px;
   bottom: 175px;
@@ -494,6 +489,11 @@ button {
   right: 145px;
   bottom: 75px;
   color: #62dfff;
+}
+
+.card-react b {
+  color: var(--muted);
+  margin-left: 5px;
 }
 
 .card-performance strong {
@@ -1124,11 +1124,12 @@ button {
   .hero {
     grid-template-columns: 1fr;
     min-height: auto;
-    padding-bottom: 80px;
+    padding: 50px 0 0;
   }
 
   .hero-visual {
     height: 470px;
+    margin-top: 50px;
   }
 
   .stats {
@@ -1143,7 +1144,37 @@ button {
     grid-column: span 2;
   }
 
-   .project-list {
+  .card-react {
+    left: 10px;
+    top: 100px;
+  }
+
+  .card-performance {
+    right: 0;
+    bottom: 220px;
+  }
+
+  .card-bundle {
+    left: 0;
+    bottom: 230px;
+  }
+
+  .card-design {
+    right: 20px;
+    top: 105px;
+  }
+
+  .card-ai {
+    left: 15px;
+    top: 315px;
+  }
+
+  .card-experience {
+    right: 65px;
+    bottom: 130px;
+  }
+
+  .project-list {
     grid-template-columns: 1fr;
   }
 
@@ -1174,10 +1205,6 @@ button {
     width: min(100% - 28px, 1180px);
   }
 
-  .hero {
-    padding-top: 50px;
-  }
-
   .hero h1 {
     font-size: 58px;
   }
@@ -1186,22 +1213,24 @@ button {
     font-size: 15px;
   }
 
-  .hero-visual {
-    height: 390px;
-  }
-
   .hero-copy {
     padding: 20px 0;
   }
 
   .code-window {
     width: 330px;
-    right: -5px;
-    top: 45px;
+    right: 10px;
+    top: -30px;
+  }
+
+  .code-window code {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .code-window pre {
     font-size: 10px;
+    padding: 12px;
   }
 
   .orbit-a {
@@ -1219,15 +1248,6 @@ button {
 
   .visual-core span {
     font-size: 62px;
-  }
-
-  .card-react {
-    left: 0;
-  }
-
-  .card-performance {
-    right: 0;
-    bottom: 80px;
   }
 
   .stats {
