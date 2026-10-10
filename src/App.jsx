@@ -130,7 +130,7 @@ const personalProjects = [
       "Responsive interactive UI"
     ],
     accent: "amber",
-    url: "https://pokemon-finder-plum.vercel.app/"
+    url: "https://find-your-pokemon-seven.vercel.app/"
   }
 ];
 

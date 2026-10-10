@@ -614,7 +614,7 @@ button {
   font-family: monospace;
   text-transform: uppercase;
   letter-spacing: .12em;
-  font-size: 10px;
+  font-size: 11px;
   color: var(--accent-2);
 }
 
@@ -1076,7 +1076,7 @@ button {
   gap: 5px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .home-button {
     display: grid;
     margin: 0;
@@ -1143,6 +1143,15 @@ button {
     grid-column: span 2;
   }
 
+   .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    width: 100%;
+    min-width: 0;
+  }
+
   .project-main,
   .expertise-layout,
   .about-grid {
@@ -1160,9 +1169,7 @@ button {
   .ai-panel {
     grid-template-columns: 1fr;
   }
-}
 
-@media (max-width: 600px) {
   .section-shell {
     width: min(100% - 28px, 1180px);
   }
@@ -1320,12 +1327,6 @@ button {
   .contact-links {
     flex-direction: column;
     gap: 10px;
-  }
-
-  .footer {
-    flex-direction: column;
-    gap: 12px;
-    align-items: flex-start;
   }
 }
 
